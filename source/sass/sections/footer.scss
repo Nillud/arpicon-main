@@ -1,0 +1,168 @@
+.page-footer {
+  padding: 60px;
+  background: #0065FF;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__description {
+    p {
+      color: #F7F9FA;
+      font-size: 11px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16.5px;
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: row;
+
+    p {
+      color: #FFF;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 27px;
+    }
+
+    .footer-section {
+      &:not(:last-child) {
+        margin-right: 60px;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+          &:not(:last-child) {
+            margin-bottom: 8px;
+          }
+
+          a {
+            color: #FFF;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            transition: all .3s ease-in-out;
+
+            &:hover,
+            &:focus,
+            &:active {
+              opacity: 0.6;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1439px) {
+    padding: 40px 20px;
+
+    &__description {
+      max-width: 360px;
+
+      img {
+        width: auto;
+        height: 45px;
+      }
+    }
+
+    &__links {
+      p {
+        line-height: normal;
+      }
+
+      .footer-section {
+        margin-bottom: 20px;
+
+        p {
+          margin-bottom: 10px;
+        }
+
+        &:not(:last-child) {
+          margin-right: 36px;
+        }
+
+        ul {
+          li {
+            &:not(:last-child) {
+              margin-bottom: 8px;
+            }
+
+            a {
+              font-size: 16px;
+              line-height: normal;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    padding: 20px;
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__description {
+      p {
+        font-size: 11px;
+        line-height: normal;
+        margin-bottom: 5px;
+      }
+
+      img {
+        width: auto;
+        height: 45px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+      }
+    }
+
+    &__links {
+      flex-direction: column;
+
+      p {
+        font-size: 16px;
+        line-height: normal;
+      }
+
+      .footer-section {
+        margin-bottom: 20px;
+
+        p {
+          margin-bottom: 10px;
+        }
+
+        &:not(:last-child) {
+          margin-right: 0;
+        }
+
+        ul {
+          li {
+            &:not(:last-child) {
+              margin-bottom: 8px;
+            }
+
+            a {
+              font-size: 16px;
+              line-height: normal;
+            }
+          }
+        }
+      }
+    }
+  }
+}

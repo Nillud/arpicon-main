@@ -1,0 +1,136 @@
+.description {
+  &__text {
+    h3 {
+      color: #000;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 39px;
+      letter-spacing: -0.64px;
+      margin-bottom: 16px;
+
+      span {
+        color: #0065FF;
+      }
+    }
+
+    p {
+      margin-bottom: 29px;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+    }
+  }
+
+  &__stat {
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+
+      li {
+        span {
+          margin-bottom: 8px;
+          font-size: 39px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 150%;
+        }
+
+        p {
+          max-width: 250px;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1439px) {
+    &__text {
+      h3 {
+        font-size: 24px;
+        line-height: normal;
+        margin-bottom: 10px;
+      }
+
+      p {
+        margin-bottom: 20px;
+        line-height: normal;
+      }
+    }
+
+    &__stat {
+      ul {
+        gap: 20px;
+
+        li {
+          span {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 30px;
+            line-height: normal;
+          }
+
+          p {
+            font-size: 15px;
+            line-height: normal;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__text {
+      h3 {
+        font-size: 24px;
+        line-height: normal;
+        margin-bottom: 10px;
+      }
+
+      p {
+        margin-bottom: 10px;
+        font-size: 16px;
+        line-height: normal;
+      }
+
+      img {
+        width: auto;
+        height: 40px;
+        margin-bottom: 20px;
+      }
+    }
+
+    &__stat {
+      ul {
+        grid-template-columns: 1fr;
+        gap: 20px;
+
+        li {
+          span {
+            margin-bottom: 8px;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: normal;
+          }
+
+          p {
+            max-width: 250px;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
